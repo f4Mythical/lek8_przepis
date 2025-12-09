@@ -19,4 +19,14 @@ public class RepozytoriumPrzepisow {
         generujPrzepisy();
         return przepisy;
     }
+    public static ArrayList<Przepis> ZwrocPrzepisyKategori(String kategoria){
+        ArrayList<Przepis> przepisyZKategori = new ArrayList<>();
+        generujPrzepisy();
+        for(Przepis przepis : przepisy) {
+            if(przepis.getKategoria().equals(kategoria)){
+                przepisyZKategori.add(przepis);
+            }
+        }
+        return przepisyZKategori;
+    }
 }

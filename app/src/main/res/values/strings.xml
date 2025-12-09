@@ -3,7 +3,7 @@
     <string-array name="kategorie_string">
         <item>Desery</item>
         <item>BBQ</item>
-        <item>Kuchnia Włoska</item>
-        <item>Kuchnia Japońska</item>
+        <item>Kuchnia Wloska</item>
+        <item>Kuchnia Japonska</item>
     </string-array>
 </resources>

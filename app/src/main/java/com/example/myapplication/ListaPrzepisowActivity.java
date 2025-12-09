@@ -34,7 +34,7 @@ public class ListaPrzepisowActivity extends AppCompatActivity {
         textView2.setText(kategoriaPrzepisu);
 
 
-        ArrayList<Przepis> przepisy = RepozytoriumPrzepisow.getPrzepisy();
+        ArrayList<Przepis> przepisy = RepozytoriumPrzepisow.ZwrocPrzepisyKategori(kategoriaPrzepisu);
 // TODO wyswietlic przepisy z tej kategori
 
         ListView listView = findViewById(R.id.listViewPrzepis);
