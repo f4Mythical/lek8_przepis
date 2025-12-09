@@ -1,6 +1,9 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -44,5 +47,15 @@ public class ListaPrzepisowActivity extends AppCompatActivity {
                 przepisy
         );
         listView.setAdapter(arrayAdapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Przepis przepis = przepisy.get(i);
+                Intent intent = new Intent(ListaPrzepisowActivity.this, PrzepisActivity.class);
+                int idTegoPrzepisu = przepis.getIdPrzepisu();
+                intent.putExtra("ID",idTegoPrzepisu);
+                startActivity(intent);
+            }
+        });
     }
 }

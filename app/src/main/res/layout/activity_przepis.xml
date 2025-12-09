@@ -8,27 +8,26 @@
     tools:context=".PrzepisActivity">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewTytul"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/imageView2"
-/>
+        app:layout_constraintBottom_toTopOf="@id/imageView"
+        />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        tools:srcCompat="@tools:sample/avatars"
+        app:srcCompat="@drawable/gyoza"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textView3"
-app:layout_constraintBottom_toTopOf="@id/textViewSkladniki"
+        app:layout_constraintTop_toBottomOf="@id/textViewTytul"
+        app:layout_constraintBottom_toBottomOf="@id/textViewSkladniki"
         android:adjustViewBounds="true"
-
         />
 
     <TextView
@@ -38,30 +37,28 @@ app:layout_constraintBottom_toTopOf="@id/textViewSkladniki"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageView2"
-        app:layout_constraintBottom_toTopOf="@id/textViewSkladniki"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintBottom_toTopOf="@id/textViewOpis"
         />
 
     <TextView
         android:id="@+id/textViewOpis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textViewSkladniki"
         app:layout_constraintBottom_toBottomOf="parent"
-        />
+        android:text="TextView" />
 
     <Button
-        android:id="@+id/buttonPodziel"
+        android:id="@+id/buttonShare"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="Share"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
     <!--
           ste
